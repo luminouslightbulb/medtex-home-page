@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Medtex Web</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7f6;
+    }
+
+    /* Navbar */
+    .navbar {
+      height: 60px;
+      background: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .logo {
+      color: #1dbf73;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .search {
+      width: 300px;
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    /* Layout */
+    .container {
+      display: flex;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background: white;
+      height: calc(100vh - 60px);
+      padding: 20px;
+    }
+
+    .menu {
+      margin: 15px 0;
+      cursor: pointer;
+      color: #555;
+    }
+
+    .menu:hover {
+      color: #1dbf73;
+    }
+
+    /* Main */
+    .main {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .hero {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      background: #1dbf73;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    /* Doctor */
+    .doctor-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .doctor-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .doctor-card img {
+      width: 60px;
+      border-radius: 50%;
+    }
+
+    .doctor-name {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .price {
+      color: #1dbf73;
+      margin-top: 5px;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <div class="logo">MEDTEX</div>
+  <input class="search" placeholder="Cari dokter..." />
+  <div>👤 User</div>
+</div>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="menu">Dashboard</div>
+    <div class="menu">Cari Dokter</div>
+    <div class="menu">Booking</div>
+    <div class="menu">Chat</div>
+    <div class="menu">Riwayat</div>
+    <div class="menu">Fasilitas</div>
+    <div class="menu">Symptom Checker</div>
+  </div>
+
+  <!-- Main -->
+  <div class="main">
+
+    <!-- Hero -->
+    <div class="hero">
+      <h2>Temukan layanan kesehatan terbaik</h2>
+      <p>Cari dokter spesialis sesuai kebutuhan Anda</p>
+      <button class="btn">Cari Dokter</button>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="cards">
+      <div class="card">Cari Dokter</div>
+      <div class="card">Booking</div>
+      <div class="card">Chat</div>
+      <div class="card">Location</div>
+    </div>
+
+    <!-- Doctor List -->
+    <h3>Rekomendasi Dokter</h3>
+    <div class="doctor-list">
+
+      <div class="doctor-card">
+        <img src="https://via.placeholder.com/60">
+        <div class="doctor-name">dr. Dinda</div>
+        <div>Dermatologist</div>
+        <div class="price">Rp150.000</div>
+        <button class="btn">Detail</button>
+      </div>
+
+      <div class="doctor-card">
+        <img src="https://via.placeholder.com/60">
+        <div class="doctor-name">dr. Budi</div>
+        <div>Spesialis Penyakit Dalam</div>
+        <div class="price">Rp120.000</div>
+        <button class="btn">Detail</button>
+      </div>
+
+      <div class="doctor-card">
+        <img src="https://via.placeholder.com/60">
+        <div class="doctor-name">dr. Tono</div>
+        <div>Spesialis Anak</div>
+        <div class="price">Rp130.000</div>
+        <button class="btn">Detail</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
