@@ -1,1 +1,0 @@
-# medtex-home-page
